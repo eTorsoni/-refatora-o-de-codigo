@@ -1,0 +1,149 @@
+.header-warning {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.header-warning span {
+    font-weight: bold;
+}
+
+.header-warning .desktop {
+    display: none;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+header .header-main {
+    max-width: 1024px;
+    margin: auto;
+    padding: 33px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo {
+    margin-right: 40px;
+}
+
+.header-left ul {
+    display: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-left li a {
+    text-decoration: none;
+    color: #7F7F7F;
+}
+
+.header-left li a:hover {
+    color: #000000;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-right .menu-burger.active {
+    background-color: #1D4FFE;
+}
+
+.header-right .menu-burger .on {
+    display: none;
+}
+
+.header-right .menu-burger.active .on {
+    display: block;
+}
+
+.header-right .menu-burger.active .off {
+    display: none;
+}
+
+.header-right .search,
+.header-search .search {
+    display: none;
+    width: 160px;
+    height: 48px;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    outline: none;
+    padding-left: 39px;
+    padding-right: 16px;
+    background-image: url(../images/ui/search.png);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: 10px center;
+}
+
+.header-search {
+    padding: 0 24px 24px 24px;
+}
+
+.header-search .search {
+    display: flex;
+    width: 100%;
+}
+
+.header-menu {
+    display: none;
+    padding-bottom: 32px;
+}
+
+.header-menu a {
+    display: block;
+    text-decoration: none;
+    color: #7F7F7F;
+    font-size: 1.9rem;
+    padding: 24px 32px;
+    border-bottom: 1px solid #D9D9D9;
+    background-image: url(../images/ui/arrow-up-right.png);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: right 32px center;
+}
+
+@media (width > 714px) {
+    .header-warning .desktop {
+        display: block;
+    }
+
+    .header-warning .mobile {
+        display: none;
+    }
+}
+
+@media (width > 1024px) {
+    .header-search {
+        display: none;
+    }
+
+    .header-left ul {
+        display: flex;
+    }
+
+    .header-right .search {
+        display: block;
+    }
+
+    .header-right .menu-burger {
+        display: none;
+    }
+
+    .header-menu {
+        display: none !important;
+    }
+}

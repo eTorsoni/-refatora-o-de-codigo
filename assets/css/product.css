@@ -1,0 +1,170 @@
+/* AREA DE BREADCRUMB */
+.breadcrumb {
+    margin: 0 24px;
+    color: #7F7F7F;
+    font-size: 1.6rem;
+}
+
+@media (width > 1024px) {
+    .breadcrumb {
+        margin-top: 32px;
+    }
+}
+
+/* AREA DO PRODUTO */
+.product {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 24px;
+}
+
+.product .photo {
+    background-color: #FFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.product .photo img {
+    width: 100%;
+}
+
+.product .info {
+    flex: 1;
+    margin-top: 24px;
+}
+
+.product .info .id {
+    font-size: 1.2rem;
+    color: #7F7F7F;
+}
+
+.product .info .name {
+    font-size: 2.4rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.product .info .size {
+    font-size: 1.6rem;
+    color: #7F7F7F;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.product .info .size .size-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.product .info .price-from {
+    font-size: 1.8rem;
+    color: #7F7F7F;
+}
+
+.product .info .price-from span {
+    text-decoration: line-through;
+}
+
+.product .info .price-to {
+    font-size: 4rem;
+    color: #1D4FFE;
+    font-weight: bold;
+}
+
+.product .info .payments {
+    font-size: 1.8rem;
+    color: #7F7F7F;
+}
+
+.product .info .buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.product .info .buttons .btn-icon {
+    width: 63px;
+    height: 63px;
+}
+
+.product .info .shipping {
+    border-top: 1px solid #D9D9D9;
+    padding-top: 40px;
+    margin-top: 40px;
+    font-size: 1.6rem;
+    color: #7F7F7F;
+}
+
+.product .info .shipping .shipping-input {
+    display: flex;
+    gap: 16px;
+    margin-top: 19px;
+}
+
+@media (width > 1024px) {
+    .product {
+        flex-direction: row;
+        gap: 136px;
+    }
+
+    .product .photo-area {
+        max-width: 350px;
+    }
+
+    .product .info {
+        margin-top: 0;
+    }
+}
+
+/* AREA DE DESCRIÇÃO */
+.description {
+    margin: 0 24px;
+    background-color: #FFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.description .desc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 24px;
+}
+
+.description .desc-body {
+    margin-top: 32px;
+}
+
+/* AREA DE RELACIONADOS */
+.related {
+    margin: 40px 24px;
+}
+
+.related-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+@media (width > 1024px) {
+    .related-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

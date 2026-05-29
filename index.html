@@ -4,315 +4,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B7Store</title>
-    <link rel="stylesheet" href="assets/css/global.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
-    <link rel="stylesheet" href="assets/css/newsletter.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
-    <link rel="stylesheet" href="assets/css/home.css" />
-    <link rel="stylesheet" href="assets/css/single-product.css" />
+    <title>B7Store - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <section class="header-warning">
-        <div class="mobile"><span>FRETE GRÁTIS</span> para todo o Nordeste!</div>
-        <div class="desktop"><span>FRETE GRÁTIS</span> para todo o Nordeste nas compras acima de R$ 199,00.
-            <span>APROVEITA!</span>
+<body class="bg-gray-50 font-sans text-gray-800 m-0 p-0">
+    <section class="bg-black text-white text-xs font-semibold py-2 text-center tracking-wide uppercase">
+        <div class="md:hidden">
+            <span class="text-yellow-400">FRETE GRÁTIS</span> para todo o Nordeste!
+        </div>
+        <div class="hidden md:block">
+            <span class="text-yellow-400">FRETE GRÁTIS</span> para todo o Nordeste nas compras acima de R$ 199,00.
+            <span class="text-yellow-400">APROVEITA!</span>
         </div>
     </section>
-    <header>
-        <div class="header-main">
-            <div class="header-left">
-                <a class="logo" href="">
-                    <img src="assets/images/ui/logo-black.png" alt="B7Store" />
+
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-8">
+                <a class="w-32 block" href="index.html">
+                    <img src="assets/images/ui/logo-black.png" alt="B7Store" class="w-full" />
                 </a>
-                <ul>
-                    <li><a href="produtos.html">Camisetas</a></li>
-                    <li><a href="produtos.html">Kits B7Web</a></li>
-                    <li><a href="produtos.html">Acessórios</a></li>
-                    <li><a href="produtos.html">Eletrônicos</a></li>
+                <ul class="hidden lg:flex items-center space-x-6 text-sm font-medium text-gray-700">
+                    <li><a href="produtos.html" class="hover:text-black transition">Camisetas</a></li>
+                    <li><a href="produtos.html" class="hover:text-black transition">Kits B7Web</a></li>
+                    <li><a href="produtos.html" class="hover:text-black transition">Acessórios</a></li>
+                    <li><a href="produtos.html" class="hover:text-black transition">Eletrônicos</a></li>
                 </ul>
             </div>
-            <div class="header-right">
-                <input class="search" type="text" placeholder="Pesquisa" />
-                <a href="login.html" class="btn-icon">
-                    <img src="assets/images/ui/user-line.png" alt="" />
+            <div class="flex items-center space-x-4">
+                <input class="hidden md:block w-64 bg-gray-100 border border-transparent rounded-full px-4 py-2 text-sm focus:outline-none focus:bg-white focus:border-gray-300 transition" type="text" placeholder="Pesquisa" />
+                <a href="login.html" class="p-2 hover:bg-gray-100 rounded-full transition w-10 h-10 flex items-center justify-center">
+                    <img src="assets/images/ui/user-line.png" alt="" class="w-6 h-6" />
                 </a>
-                <a href="checkout.html" class="btn-icon">
-                    <img src="assets/images/ui/shopping-bag-4-line.png" alt="" />
+                <a href="checkout.html" class="p-2 hover:bg-gray-100 rounded-full transition w-10 h-10 flex items-center justify-center">
+                    <img src="assets/images/ui/shopping-bag-4-line.png" alt="" class="w-6 h-6" />
                 </a>
-                <a class="btn-icon menu-burger">
-                    <img class="off" src="assets/images/ui/menu-line.png" alt="" />
-                    <img class="on" src="assets/images/ui/menu-line-white.png" alt="" />
+                <a class="lg:hidden p-2 hover:bg-gray-100 rounded-full transition w-10 h-10 flex items-center justify-center cursor-pointer menu-burger">
+                    <img class="off w-6 h-6" src="assets/images/ui/menu-line.png" alt="" />
+                    <img class="on hidden w-6 h-6" src="assets/images/ui/menu-line-white.png" alt="" />
                 </a>
             </div>
         </div>
-        <div class="header-menu">
-            <a href="produtos.html">Camisetas</a>
-            <a href="produtos.html">Kits B7Web</a>
-            <a href="produtos.html">Acessórios</a>
-            <a href="produtos.html">Eletrônicos</a>
+        <div class="header-menu hidden lg:hidden bg-white border-b border-gray-200 px-4 py-3 space-y-2 text-sm font-medium">
+            <a href="produtos.html" class="block py-2 text-gray-700 hover:text-black">Camisetas</a>
+            <a href="produtos.html" class="block py-2 text-gray-700 hover:text-black">Kits B7Web</a>
+            <a href="produtos.html" class="block py-2 text-gray-700 hover:text-black">Acessórios</a>
+            <a href="produtos.html" class="block py-2 text-gray-700 hover:text-black">Eletrônicos</a>
         </div>
-        <div class="header-search">
-            <input class="search" type="text" placeholder="O que você procura?" />
+        <div class="header-search md:hidden bg-gray-50 px-4 py-3 border-b border-gray-200">
+            <input class="w-full bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none" type="text" placeholder="O que você procura?" />
         </div>
     </header>
-    <main>
 
-        <section class="banner">
-            <div class="banner-area">
-                <a href="produtos.html" class="active">
-                    <img src="assets/images/banners/banner-1.png" alt="" />
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <section class="banner relative rounded-2xl overflow-hidden shadow-sm mb-12">
+            <div class="banner-area flex transition-all duration-500">
+                <a href="produtos.html" class="active w-full flex-shrink-0">
+                    <img src="assets/images/banners/banner-1.png" alt="" class="w-full h-auto object-cover" />
                 </a>
-                <a href="produtos.html">
-                    <img src="assets/images/banners/banner-2.png" alt="" />
+                <a href="produtos.html" class="w-full flex-shrink-0 hidden">
+                    <img src="assets/images/banners/banner-2.png" alt="" class="w-full h-auto object-cover" />
                 </a>
-                <a href="produtos.html">
-                    <img src="assets/images/banners/banner-3.png" alt="" />
+                <a href="produtos.html" class="w-full flex-shrink-0 hidden">
+                    <img src="assets/images/banners/banner-3.png" alt="" class="w-full h-auto object-cover" />
                 </a>
-                <a href="produtos.html">
-                    <img src="assets/images/banners/banner-4.png" alt="" />
+                <a href="produtos.html" class="w-full flex-shrink-0 hidden">
+                    <img src="assets/images/banners/banner-4.png" alt="" class="w-full h-auto object-cover" />
                 </a>
             </div>
-            <div class="banner-counter-area">
-                <div class="banner-counter">
-                    <div class="banner-counter-item active">
-                        <div class="banner-counter-point"></div>
-                    </div>
-                    <div class="banner-counter-item">
-                        <div class="banner-counter-point"></div>
-                    </div>
-                    <div class="banner-counter-item">
-                        <div class="banner-counter-point"></div>
-                    </div>
-                    <div class="banner-counter-item">
-                        <div class="banner-counter-point"></div>
-                    </div>
+            <div class="absolute bottom-4 left-0 right-0 flex justify-center">
+                <div class="flex space-x-2 bg-black/30 backdrop-blur-sm p-2 rounded-full">
+                    <div class="w-2.5 h-2.5 rounded-full bg-white cursor-pointer opacity-100"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-white cursor-pointer opacity-50"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-white cursor-pointer opacity-50"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-white cursor-pointer opacity-50"></div>
                 </div>
             </div>
         </section>
 
-        <section class="warnings">
-            <div class="warning">
-                <div class="warning-icon">
-                    <img src="assets/images/ui/truck-line.png" alt="" />
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div class="flex items-center space-x-4 bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <img src="assets/images/ui/truck-line.png" alt="" class="w-6 h-6" />
                 </div>
-                <div class="warning-info">
-                    <div class="warning-title">Frete Grátis</div>
-                    <div class="warning-subtitle">Para todo o Nordeste</div>
-                </div>
-            </div>
-            <div class="warning">
-                <div class="warning-icon">
-                    <img src="assets/images/ui/discount-percent-line.png" alt="" />
-                </div>
-                <div class="warning-info">
-                    <div class="warning-title">Muitas ofertas</div>
-                    <div class="warning-subtitle">Ofertas imbatíveis</div>
-                </div>
-            </div>
-            <div class="warning">
-                <div class="warning-icon">
-                    <img src="assets/images/ui/arrow-left-right-line.png" alt="" />
-                </div>
-                <div class="warning-info">
-                    <div class="warning-title">Troca fácil</div>
-                    <div class="warning-subtitle">No período de 30 dias</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="product-list">
-            <h4>Produtos mais vistos</h4>
-            <h5>Campeões de visualização da nossa loja.</h5>
-            <div class="products-area">
-
-                <div class="product-item">
-                    <a href="product.html">
-                        <div class="product-photo">
-                            <img src="assets/images/products/camiseta-css.png" alt="" />
-                        </div>
-                        <div class="product-name">Camisa CSS - Azul</div>
-                        <div class="product-price">R$ 59,90</div>
-                        <div class="product-info">Pagamento via PIX</div>
-                    </a>
-                    <div class="product-fav">
-                        <img src="assets/images/ui/heart-3-line.png" alt="" />
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product.html">
-                        <div class="product-photo">
-                            <img src="assets/images/products/camiseta-css.png" alt="" />
-                        </div>
-                        <div class="product-name">Camisa CSS - Azul</div>
-                        <div class="product-price">R$ 59,90</div>
-                        <div class="product-info">Pagamento via PIX</div>
-                    </a>
-                    <div class="product-fav">
-                        <img src="assets/images/ui/heart-3-line.png" alt="" />
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product.html">
-                        <div class="product-photo">
-                            <img src="assets/images/products/camiseta-css.png" alt="" />
-                        </div>
-                        <div class="product-name">Camisa CSS - Azul</div>
-                        <div class="product-price">R$ 59,90</div>
-                        <div class="product-info">Pagamento via PIX</div>
-                    </a>
-                    <div class="product-fav">
-                        <img src="assets/images/ui/heart-3-line.png" alt="" />
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product.html">
-                        <div class="product-photo">
-                            <img src="assets/images/products/camiseta-css.png" alt="" />
-                        </div>
-                        <div class="product-name">Camisa CSS - Azul</div>
-                        <div class="product-price">R$ 59,90</div>
-                        <div class="product-info">Pagamento via PIX</div>
-                    </a>
-                    <div class="product-fav">
-                        <img src="assets/images/ui/heart-3-line.png" alt="" />
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="product-list">
-            <h4>Produtos mais vendidos</h4>
-            <h5>Campeões de vendas da nossa loja.</h5>
-            <div class="products-area">
-
-                <div class="product-item">
-                    <a href="product.html">
-                        <div class="product-photo">
-                            <img src="assets/images/products/camiseta-css.png" alt="" />
-                        </div>
-                        <div class="product-name">Camisa CSS - Azul</div>
-                        <div class="product-price">R$ 59,90</div>
-                        <div class="product-info">Pagamento via PIX</div>
-                    </a>
-                    <div class="product-fav">
-                        <img src="assets/images/ui/heart-3-line.png" alt="" />
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product.html">
-                        <div class="product-photo">
-                            <img src="assets/images/products/camiseta-css.png" alt="" />
-                        </div>
-                        <div class="product-name">Camisa CSS - Azul</div>
-                        <div class="product-price">R$ 59,90</div>
-                        <div class="product-info">Pagamento via PIX</div>
-                    </a>
-                    <div class="product-fav">
-                        <img src="assets/images/ui/heart-3-line.png" alt="" />
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product.html">
-                        <div class="product-photo">
-                            <img src="assets/images/products/camiseta-css.png" alt="" />
-                        </div>
-                        <div class="product-name">Camisa CSS - Azul</div>
-                        <div class="product-price">R$ 59,90</div>
-                        <div class="product-info">Pagamento via PIX</div>
-                    </a>
-                    <div class="product-fav">
-                        <img src="assets/images/ui/heart-3-line.png" alt="" />
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product.html">
-                        <div class="product-photo">
-                            <img src="assets/images/products/camiseta-css.png" alt="" />
-                        </div>
-                        <div class="product-name">Camisa CSS - Azul</div>
-                        <div class="product-price">R$ 59,90</div>
-                        <div class="product-info">Pagamento via PIX</div>
-                    </a>
-                    <div class="product-fav">
-                        <img src="assets/images/ui/heart-3-line.png" alt="" />
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-    <section class="newsletter">
-        <div class="news-area">
-            <div class="news-left">
-                <img src="assets/images/ui/mail-send-line.png" alt="" />
                 <div>
-                    <h3>Fique por dentro das promoções!</h3>
-                    <p>Coloque seu e-mail e seja o primeiro a saber</p>
+                    <div class="font-bold text-gray-900">Frete Grátis</div>
+                    <div class="text-sm text-gray-500">Para todo o Nordeste</div>
                 </div>
             </div>
-            <div class="news-right">
-                <input class="input" type="text" placeholder="Qual seu e-mail?" />
-                <button class="button">Enviar</button>
+            <div class="flex items-center space-x-4 bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <img src="assets/images/ui/discount-percent-line.png" alt="" class="w-6 h-6" />
+                </div>
+                <div>
+                    <div class="font-bold text-gray-900">Muitas ofertas</div>
+                    <div class="text-sm text-gray-500">Ofertas imbatíveis</div>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4 bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <img src="assets/images/ui/arrow-left-right-line.png" alt="" class="w-6 h-6" />
+                </div>
+                <div>
+                    <div class="font-bold text-gray-900">Troca fácil</div>
+                    <div class="text-sm text-gray-500">No período de 30 dias</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h4 class="text-2xl font-bold text-gray-900 mb-1">Produtos mais vistos</h4>
+            <h5 class="text-sm text-gray-500 mb-6">Campeões de visualização da nossa loja.</h5>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm relative group">
+                    <a href="product.html" class="block p-4">
+                        <div class="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4 flex items-center justify-center">
+                            <img src="assets/images/products/camiseta-css.png" alt="" class="w-full h-full object-contain group-hover:scale-105 transition duration-300" />
+                        </div>
+                        <div class="text-sm text-gray-600 font-medium line-clamp-1">Camisa CSS - Azul</div>
+                        <div class="text-lg font-bold text-gray-900 mt-1">R$ 59,90</div>
+                        <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 inline-block px-2 py-0.5 rounded mt-2">Pagamento via PIX</div>
+                    </a>
+                    <div class="absolute top-6 right-6 w-8 h-8 bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition">
+                        <img src="assets/images/ui/heart-3-line.png" alt="" class="w-4 h-4" />
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm relative group">
+                    <a href="product.html" class="block p-4">
+                        <div class="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4 flex items-center justify-center">
+                            <img src="assets/images/products/camiseta-css.png" alt="" class="w-full h-full object-contain group-hover:scale-105 transition duration-300" />
+                        </div>
+                        <div class="text-sm text-gray-600 font-medium line-clamp-1">Camisa CSS - Azul</div>
+                        <div class="text-lg font-bold text-gray-900 mt-1">R$ 59,90</div>
+                        <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 inline-block px-2 py-0.5 rounded mt-2">Pagamento via PIX</div>
+                    </a>
+                    <div class="absolute top-6 right-6 w-8 h-8 bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition">
+                        <img src="assets/images/ui/heart-3-line.png" alt="" class="w-4 h-4" />
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm relative group">
+                    <a href="product.html" class="block p-4">
+                        <div class="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4 flex items-center justify-center">
+                            <img src="assets/images/products/camiseta-css.png" alt="" class="w-full h-full object-contain group-hover:scale-105 transition duration-300" />
+                        </div>
+                        <div class="text-sm text-gray-600 font-medium line-clamp-1">Camisa CSS - Azul</div>
+                        <div class="text-lg font-bold text-gray-900 mt-1">R$ 59,90</div>
+                        <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 inline-block px-2 py-0.5 rounded mt-2">Pagamento via PIX</div>
+                    </a>
+                    <div class="absolute top-6 right-6 w-8 h-8 bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition">
+                        <img src="assets/images/ui/heart-3-line.png" alt="" class="w-4 h-4" />
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm relative group">
+                    <a href="product.html" class="block p-4">
+                        <div class="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4 flex items-center justify-center">
+                            <img src="assets/images/products/camiseta-css.png" alt="" class="w-full h-full object-contain group-hover:scale-105 transition duration-300" />
+                        </div>
+                        <div class="text-sm text-gray-600 font-medium line-clamp-1">Camisa CSS - Azul</div>
+                        <div class="text-lg font-bold text-gray-900 mt-1">R$ 59,90</div>
+                        <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 inline-block px-2 py-0.5 rounded mt-2">Pagamento via PIX</div>
+                    </a>
+                    <div class="absolute top-6 right-6 w-8 h-8 bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition">
+                        <img src="assets/images/ui/heart-3-line.png" alt="" class="w-4 h-4" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h4 class="text-2xl font-bold text-gray-900 mb-1">Produtos mais vendidos</h4>
+            <h5 class="text-sm text-gray-500 mb-6">Campeões de vendas da nossa loja.</h5>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm relative group">
+                    <a href="product.html" class="block p-4">
+                        <div class="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4 flex items-center justify-center">
+                            <img src="assets/images/products/camiseta-css.png" alt="" class="w-full h-full object-contain group-hover:scale-105 transition duration-300" />
+                        </div>
+                        <div class="text-sm text-gray-600 font-medium line-clamp-1">Camisa CSS - Azul</div>
+                        <div class="text-lg font-bold text-gray-900 mt-1">R$ 59,90</div>
+                        <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 inline-block px-2 py-0.5 rounded mt-2">Pagamento via PIX</div>
+                    </a>
+                    <div class="absolute top-6 right-6 w-8 h-8 bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition">
+                        <img src="assets/images/ui/heart-3-line.png" alt="" class="w-4 h-4" />
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm relative group">
+                    <a href="product.html" class="block p-4">
+                        <div class="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4 flex items-center justify-center">
+                            <img src="assets/images/products/camiseta-css.png" alt="" class="w-full h-full object-contain group-hover:scale-105 transition duration-300" />
+                        </div>
+                        <div class="text-sm text-gray-600 font-medium line-clamp-1">Camisa CSS - Azul</div>
+                        <div class="text-lg font-bold text-gray-900 mt-1">R$ 59,90</div>
+                        <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 inline-block px-2 py-0.5 rounded mt-2">Pagamento via PIX</div>
+                    </a>
+                    <div class="absolute top-6 right-6 w-8 h-8 bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition">
+                        <img src="assets/images/ui/heart-3-line.png" alt="" class="w-4 h-4" />
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm relative group">
+                    <a href="product.html" class="block p-4">
+                        <div class="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4 flex items-center justify-center">
+                            <img src="assets/images/products/camiseta-css.png" alt="" class="w-full h-full object-contain group-hover:scale-105 transition duration-300" />
+                        </div>
+                        <div class="text-sm text-gray-600 font-medium line-clamp-1">Camisa CSS - Azul</div>
+                        <div class="text-lg font-bold text-gray-900 mt-1">R$ 59,90</div>
+                        <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 inline-block px-2 py-0.5 rounded mt-2">Pagamento via PIX</div>
+                    </a>
+                    <div class="absolute top-6 right-6 w-8 h-8 bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition">
+                        <img src="assets/images/ui/heart-3-line.png" alt="" class="w-4 h-4" />
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm relative group">
+                    <a href="product.html" class="block p-4">
+                        <div class="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4 flex items-center justify-center">
+                            <img src="assets/images/products/camiseta-css.png" alt="" class="w-full h-full object-contain group-hover:scale-105 transition duration-300" />
+                        </div>
+                        <div class="text-sm text-gray-600 font-medium line-clamp-1">Camisa CSS - Azul</div>
+                        <div class="text-lg font-bold text-gray-900 mt-1">R$ 59,90</div>
+                        <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 inline-block px-2 py-0.5 rounded mt-2">Pagamento via PIX</div>
+                    </a>
+                    <div class="absolute top-6 right-6 w-8 h-8 bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition">
+                        <img src="assets/images/ui/heart-3-line.png" alt="" class="w-4 h-4" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="bg-gray-100 border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-4">
+                <img src="assets/images/ui/mail-send-line.png" alt="" class="w-10 h-10 opacity-70" />
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900">Fique por dentro das promoções!</h3>
+                    <p class="text-sm text-gray-500">Coloque seu e-mail e seja o primeiro a saber</p>
+                </div>
+            </div>
+            <div class="flex w-full md:w-auto max-w-md gap-2 flex-grow justify-end">
+                <input class="w-full md:w-64 border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-black bg-white" type="text" placeholder="Qual seu e-mail?" />
+                <button class="bg-black hover:bg-gray-800 text-white font-semibold text-sm px-6 py-2.5 rounded-lg transition shrink-0">Enviar</button>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="footer-menu">
-            <a class="logo" href="">
-                <img src="assets/images/ui/logo-white.png" alt="B7Store" />
-            </a>
-            <ul>
-                <li><a href="produtos.html">Camisetas</a></li>
-                <li><a href="produtos.html">Kits B7Web</a></li>
-                <li><a href="produtos.html">Acessórios</a></li>
-                <li><a href="produtos.html">Eletrônicos</a></li>
-            </ul>
-        </div>
-        <div class="footer-contacts">
-            <div class="contacts">
-                <div class="footer-title">Precisa de ajuda?</div>
-                <div class="footer-icons">
-                    <a class="btn-icon-text" href="">
-                        <img src="assets/images/ui/mail-line.png" alt="" />
+
+    <footer class="bg-zinc-900 text-gray-400 py-12 text-sm border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="space-y-4">
+                <a class="w-32 block" href="index.html">
+                    <img src="assets/images/ui/logo-white.png" alt="B7Store" class="w-full" />
+                </a>
+                <ul class="space-y-2">
+                    <li><a href="produtos.html" class="hover:text-white transition">Camisetas</a></li>
+                    <li><a href="produtos.html" class="hover:text-white transition">Kits B7Web</a></li>
+                    <li><a href="produtos.html" class="hover:text-white transition">Acessórios</a></li>
+                    <li><a href="produtos.html" class="hover:text-white transition">Eletrônicos</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="text-white font-semibold mb-4">Precisa de ajuda?</div>
+                <div class="space-y-3">
+                    <a class="flex items-center space-x-2 hover:text-white transition" href="mailto:b7store@email.com">
+                        <img src="assets/images/ui/mail-line.png" alt="" class="w-5 h-5 opacity-60 invert" />
                         <span>b7store@email.com</span>
                     </a>
-                    <a class="btn-icon-text" href="">
-                        <img src="assets/images/ui/phone-line.png" alt="" />
+                    <a class="flex items-center space-x-2 hover:text-white transition" href="tel:0000000000">
+                        <img src="assets/images/ui/phone-line.png" alt="" class="w-5 h-5 opacity-60 invert" />
                         <span>(00) 00000-0000</span>
                     </a>
                 </div>
             </div>
-            <div class="social">
-                <div class="footer-title">Acompanhe nas redes sociais</div>
-                <div class="footer-icons">
-
-                    <a href="" class="btn-icon">
-                        <img src="assets/images/ui/instagram-line.png" alt="" />
+            <div>
+                <div class="text-white font-semibold mb-4">Acompanhe nas redes sociais</div>
+                <div class="flex space-x-3">
+                    <a href="" class="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center hover:bg-white/5 transition hover:text-white">
+                        <img src="assets/images/ui/instagram-line.png" alt="" class="w-5 h-5 invert" />
                     </a>
-
-                    <a href="" class="btn-icon">
-                        <img src="assets/images/ui/linkedin-line.png" alt="" />
+                    <a href="" class="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center hover:bg-white/5 transition hover:text-white">
+                        <img src="assets/images/ui/linkedin-line.png" alt="" class="w-5 h-5 invert" />
                     </a>
-
-                    <a href="" class="btn-icon">
-                        <img src="assets/images/ui/facebook-line.png" alt="" />
+                    <a href="" class="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center hover:bg-white/5 transition hover:text-white">
+                        <img src="assets/images/ui/facebook-line.png" alt="" class="w-5 h-5 invert" />
                     </a>
-
-                    <a href="" class="btn-icon">
-                        <img src="assets/images/ui/twitter-x-fill.png" alt="" />
+                    <a href="" class="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center hover:bg-white/5 transition hover:text-white">
+                        <img src="assets/images/ui/twitter-x-fill.png" alt="" class="w-5 h-5 invert" />
                     </a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="phrase">Se você leu isso aqui, saiba que está no caminho certo!<br />Continue estudando e você
-                chegará lá...</div>
-            <div class="btn-icon">
-                <img src="assets/images/ui/arrow-up-line.png" alt="" />
+        <div class="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-zinc-800 flex items-center justify-between text-xs text-gray-500">
+            <div class="leading-relaxed">Se você leu isso aqui, saiba que está no caminho certo!<br />Continue estudando e você chegará lá...</div>
+            <div class="w-10 h-10 border border-zinc-700 rounded-full flex items-center justify-center cursor-pointer hover:bg-white/5 transition">
+                <img src="assets/images/ui/arrow-up-line.png" alt="" class="w-5 h-5 invert" />
             </div>
         </div>
     </footer>
